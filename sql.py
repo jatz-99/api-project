@@ -1,8 +1,9 @@
 
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel
-from databases import get_db
-from models import User as UserDB
+from databases import get_db, engine
+from models import User as UserDB, Base
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
