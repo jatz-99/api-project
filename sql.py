@@ -4,6 +4,8 @@ from pydantic import BaseModel
 from databases import get_db
 from models import User as UserDB
 
+app = FastAPI()
+
 
 
 
