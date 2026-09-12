@@ -13,3 +13,4 @@ class User(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(50))
     age: Mapped[int] = mapped_column(Integer)
+    is_active: Mapped[bool] = mapped_column(default=True)
