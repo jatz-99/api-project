@@ -3,7 +3,7 @@ from pydantic import BaseModel, ConfigDict
 
 from databases import get_db, engine
 from models import User as UserDB
-from tasks import PostResponse
+from routers.tasks import PostResponse
 
 
 
